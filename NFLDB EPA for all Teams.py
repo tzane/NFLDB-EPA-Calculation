@@ -10,7 +10,7 @@ EPA_play = np.zeros(100)
 # This query generates a data set of all regular season games from 2017 season
 db = nfldb.connect()
 q = nfldb.Query(db) 
-games = q.game(season_year=[2017], season_type='Regular').as_games()
+games = q.game(season_year=[2016], season_type='Regular').as_games()
 
 
 # This function onverts yardline string (e.g. "OWN 15") to integer 1-99 
